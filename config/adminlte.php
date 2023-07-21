@@ -315,8 +315,6 @@ return [
             'text'        => 'Dashboard',
             'url'         => 'home',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
         ],
         [
             'text'        => 'Product',
@@ -329,7 +327,7 @@ return [
         ],
         [
             'text' => 'order',
-            'url'  => '/',
+            'url'  => '/order',
             'icon' => 'fas fa-fw fa-money',
         ],
         [
@@ -386,22 +384,7 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+        
     ],
 
     /*
