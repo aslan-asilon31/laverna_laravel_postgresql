@@ -47,15 +47,66 @@
 <div class="" id="feature">
 
 ## 💠 developing Features for users
+features for users :
 
-### Sistem Keamanan:
--Perlindungan keamanan yang kuat untuk melindungi data pengguna dan transaksi.<br>
 
-### Fitur Wishlist (Daftar Keinginan):
--Fitur yang memungkinkan pengguna untuk menyimpan daftar produk yang ingin dibeli di masa mendatang.<br>
+1. Reservasi dan Pemesanan Kamar:
+    Fitur untuk menerima dan mengelola reservasi serta pemesanan kamar dari tamu.
+    Kemampuan untuk menampilkan ketersediaan kamar dan harga yang akurat. <br>
 
-### Sistem Penilaian Toko:
--Fitur yang memungkinkan pengguna memberikan penilaian dan ulasan tentang toko online itu sendiri.<br>
+2. Check-in dan Check-out:
+    Fasilitas untuk mencatat kedatangan dan keberangkatan tamu.
+    Pengelolaan proses check-in dan check-out secara efisien. <br> <br>
+
+3. Sistem Manajemen Kamar (Housekeeping):
+    Fasilitas untuk mengelola kebersihan dan perawatan kamar.
+    Penjadwalan pembersihan dan pemeliharaan kamar. <br> <br>
+
+4. Sistem Pembayaran dan Faktur:
+    Fitur untuk mengelola pembayaran tamu dan mengeluarkan faktur secara otomatis.
+    Integrasi dengan berbagai metode pembayaran. <br> <br>
+
+5. Keanggotaan dan Program Loyalitas:
+    Sistem untuk mengelola program keanggotaan dan loyalitas tamu.
+    Penawaran khusus dan diskon untuk anggota yang berpartisipasi. <br> <br>
+
+6. Laporan dan Analisis:
+    Fitur untuk menghasilkan laporan tentang kinerja hotel, pendapatan, dan statistik lainnya.
+    Analisis data untuk membantu pengambilan keputusan bisnis. <br>
+
+7. Manajemen Inventaris dan Stok:
+    Fasilitas untuk mengelola inventaris hotel, seperti peralatan, perlengkapan, dan persediaan.
+    Sistem notifikasi untuk mengingatkan staf tentang kebutuhan penggantian stok. <br>
+
+8. Sistem Resepsionis dan Pesan Antar:
+    Sistem untuk menerima panggilan telepon dari tamu dan menyediakan pesan antar.
+    Fasilitas untuk memberikan informasi kepada tamu tentang hotel dan layanan yang disediakan. <br>
+
+9. Manajemen Restoran dan Layanan Makanan:
+    Fitur untuk mengelola operasional restoran hotel dan pemesanan layanan makanan.
+    Integrasi dengan sistem pemesanan meja dan menu. <br>
+
+10. Layanan Konkierge:
+    Fitur untuk memberikan layanan konkierge kepada tamu, seperti pemesanan tur, transportasi, restaurant, tiket pertunjukan atau acara, bantuan bahasa asing dan kegiatan lainnya. <br>
+
+11. Manajemen Keamanan dan Akses:
+    Sistem untuk mengelola keamanan hotel dan kontrol akses ke area tertentu.
+    Sistem kunci pintar (smart key) untuk memberikan akses ke kamar. <br>
+
+12. Sistem Komunikasi Internal:
+    Fasilitas untuk berkomunikasi dengan staf hotel secara internal.
+    Penggunaan pesan teks atau pesan singkat untuk berkoordinasi dan berbagi informasi. <br>
+
+13. Manajemen Harga dan Penawaran Khusus:
+    Sistem untuk mengatur harga kamar dan menawarkan paket khusus.
+    Fitur pembaruan harga berdasarkan permintaan dan musim. <br>
+
+14. Sistem Integrasi dengan Pihak Eksternal:
+    Kemampuan untuk terhubung dengan pihak eksternal, seperti situs pemesanan online dan sistem keuangan. <br>
+
+15. Manajemen Layanan Tamu:
+    Fasilitas untuk mengelola permintaan dan keluhan tamu.
+    Pelacakan pelayanan dan respons yang cepat terhadap masalah. <br>
 
 ## 💠 developing Features for developers
 - Laravel 10 bootstrap 5<br>
