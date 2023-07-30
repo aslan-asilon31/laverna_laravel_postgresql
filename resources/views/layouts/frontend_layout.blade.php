@@ -15,6 +15,11 @@
 <link href="{{ asset('assets/frontend/plugins/colorbox/colorbox.css') }}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/styles/main_styles.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/styles/responsive.css') }}">
+
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/styles/booking.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/styles/booking_responsive.css') }}">
+@yield('js')
+
 </head>
 <body>
 
@@ -24,6 +29,7 @@
 
 	<header class="header">
 		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+            <img src="{{ asset('laverna_logo.png') }}" style="width:50px; height:50px;" alt="" srcset="">
 			<div class="logo"><a href="#">Laverna</a></div>
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
 				<nav class="main_nav">
@@ -96,8 +102,8 @@
 				</nav>
 				<div class="book_button"><a href="booking.html">Book Online</a></div>
 				<div class="header_phone d-flex flex-row align-items-center justify-content-center">
-					<img src="{{ asset('assets/frontend/images/phone.png') }}" alt="">
-					<span>0183-12345678</span>
+					<img src="{{ asset('assets/frontend/images/phone.png') }}" alt="" style="margin-right:2px;">
+					<a href="#contact" style="color:white;font-weight:bold;" onclick="showTawkChat()">Hubungi Sekarang (klik tombol ini 2x)</a>
 				</div>
 
 				<!-- Hamburger Menu -->
@@ -281,7 +287,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
 	</footer>
 </div>
 
-@yield('js')
 
 <script src="{{ asset('assets/frontend/js/jquery-3.3.1.min.js') }}"></script>
 <script src="{{ asset('assets/frontend/styles/bootstrap-4.1.2/popper.js') }}"></script>

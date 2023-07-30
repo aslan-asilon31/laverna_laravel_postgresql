@@ -64,7 +64,7 @@ return [
     */
 
     'logo' => '<b>Laverna</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo_img' => 'laverna_logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -318,22 +318,53 @@ return [
         ],
         [
             'text'        => 'Product',
-            'url'         => 'home',
+            'url'         => '/products',
+            'icon'        => 'fas fa-fw fa-shopping-cart',
+        ],
+        [
+            'text' => 'Airplanes',
+            'url'  => 'airplanes',
+            'icon' => 'fas fa-fw fa-plane',
+        ],
+        [
+            'text' => 'Cars Rent',
+            'url'  => 'cars',
+            'icon' => 'fas fa-fw fa-car',
+        ],
+        [
+            'text' => 'Trains',
+            'url'  => 'trains',
+            'icon' => 'fas fa-fw fa-train',
+        ],
+        [
+            'text' => 'Villa & Apart',
+            'url'  => 'apartements',
+            'icon' => 'fas fa-fw fa-building',
+        ],
+        [
+            'text' => 'Hotels',
+            'url'  => 'hotels',
+            'icon' => 'fas fa-fw fa-home',
+        ],
+        [
+            'text' => 'Events',
+            'url'  => 'events',
+            'icon' => 'fas fa-fw fa-event',
         ],
         [
             'text' => 'category',
-            'url'  => 'category',
+            'url'  => 'categories',
             'icon' => 'fas fa-fw fa-boxes',
         ],
         [
             'text' => 'order',
-            'url'  => '/order',
+            'url'  => '/orders',
             'icon' => 'fas fa-fw fa-money',
         ],
         [
             'text' => 'report',
-            'url'  => 'home',
-            'icon' => 'fas fa-fw fa-file',
+            'url'  => '/reports',
+            'icon' => 'fas fa-fw fa-report',
         ],
         ['header' => 'account_settings'],
         [

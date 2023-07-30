@@ -28,6 +28,16 @@
 
 ![landingpage3](https://github.com/aslan-asilon31/laverna_laravel_postgresql/assets/116990574/f644ab1d-b9f2-4689-bb7d-e9ab15f48a4f)
 
+![laverna-search-result](https://github.com/aslan-asilon31/laverna_laravel_postgresql/assets/116990574/cdf249b3-3641-4a04-a2e6-61be1a8f677b)
+
+
+![live_chat](https://github.com/aslan-asilon31/laverna_laravel_postgresql/assets/116990574/4abb2a6f-7f84-4e00-b487-8d752fb484fb)
+
+![login](https://github.com/aslan-asilon31/laverna_laravel_postgresql/assets/116990574/7d59a04b-2d8e-42a7-98fe-1bf0ea5a92eb)
+
+
+![register](https://github.com/aslan-asilon31/laverna_laravel_postgresql/assets/116990574/ba3097bc-6b3d-47d5-8e20-a35c5c24be97)
+
 
 </div>
 

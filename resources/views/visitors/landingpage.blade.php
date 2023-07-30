@@ -23,17 +23,31 @@
 									<div class="home_content text-center">
 										<div class="home_title">A Luxury Stay</div>
 										<div class="booking_form_container">
-											<form action="#" class="booking_form">
+											<form action="{{ route('searchRooms') }}" method="POST" class="booking_form">
+												@csrf
 												<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
 													<div class="booking_input_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Check in" required="required"></div>
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Check out" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Children" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Room" required="required"></div>
+														<div>
+															<!-- Use "date" type for date inputs and give a name attribute -->
+															<input type="date" name="check_in" class="booking_input booking_input_a booking_in" placeholder="Check in" required="required">
+														</div>
+														<div>
+															<!-- Use "date" type for date inputs and give a name attribute -->
+															<input type="date" name="check_out" class="booking_input booking_input_a booking_out" placeholder="Check out" required="required">
+														</div>
+														<div>
+															<input type="number" name="children_amount" class="booking_input booking_input_b" placeholder="Children" required="required">
+														</div>
+														<div>
+															<input type="number" name="room_amount" class="booking_input booking_input_b" placeholder="Room" required="required">
+														</div>
 													</div>
-													<div><button class="booking_button trans_200">Book Now</button></div>
+													<div>
+														<button type="submit" class="booking_button trans_200">Book Now</button>
+													</div>
 												</div>
 											</form>
+											
 										</div>
 									</div>
 								</div>
@@ -42,76 +56,11 @@
 					</div>
 				</div>
 
-				<!-- Slide -->
-				<div class="slide">
-					<div class="background_image" style="background-image:url({{asset('assets/frontend/images/index_1.jpg')}});"></div>
-					<div class="home_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_content text-center">
-										<div class="home_title">A Luxury Stay</div>
-										<div class="booking_form_container">
-											<form action="#" class="booking_form">
-												<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
-													<div class="booking_input_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Check in" required="required"></div>
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Check out" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Children" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Room" required="required"></div>
-													</div>
-													<div><button class="booking_button trans_200">Book Now</button></div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<!-- Slide -->
-				<div class="slide">
-					<div class="background_image" style="background-image:url({{asset('assets/frontend/images/index_1.jpg')}});"></div>
-					<div class="home_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_content text-center">
-										<div class="home_title">A Luxury Stay</div>
-										<div class="booking_form_container">
-											<form action="#" class="booking_form">
-												<div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
-													<div class="booking_input_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_in" placeholder="Check in" required="required"></div>
-														<div><input type="text" class="datepicker booking_input booking_input_a booking_out" placeholder="Check out" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Children" required="required"></div>
-														<div><input type="number" class="booking_input booking_input_b" placeholder="Room" required="required"></div>
-													</div>
-													<div><button class="booking_button trans_200">Book Now</button></div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 			</div>
 			
-			<!-- Home Slider Dots -->
-			<div class="home_slider_dots_container">
-				<div class="home_slider_dots">
-					<ul id="home_slider_custom_dots" class="home_slider_custom_dots d-flex flex-row align-items-start justify-content-start">
-						<li class="home_slider_custom_dot active">01.</li>
-						<li class="home_slider_custom_dot">02.</li>
-						<li class="home_slider_custom_dot">03.</li>
-					</ul>
-				</div>
-			</div>
+
 			
 		</div>
 	</div>
@@ -366,19 +315,108 @@
 @endsection
 
 @section('js')
-   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/648c8c8ecc26a871b022fe6f/1h32ga41a';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>
-<!--End of Tawk.to Script--> 
+        <!-- Place the Tawk script in the head section -->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {};
+            Tawk_LoadStart = new Date();
+
+            window.Tawk_API.onChatMaximized = function() {
+                // Place your code here, for example, you can log the event or show a notification.
+                console.log('Chat widget maximized.');
+                // You can also perform any other actions you want when the chat widget is maximized.
+            };
+    
+            // Function to show the Tawk chat when the button is clicked
+            function showTawkChat() {
+                // Check if the Tawk chat widget has already been loaded
+                if (typeof Tawk_API.toggle !== "undefined") {
+                        // Maximize the chat widget
+                        Tawk_API.maximize();
+                        // Show the chat widget
+                        // Tawk_API.toggle();
+
+                        // Set waktu obrolan selesai jika user tidak membalas chat admin dalam 10 minutes (600,000 milliseconds)
+                        setTimeout(function () {
+                            endTawkChatIfNoReply();
+                        }, 600000);
+                } else {
+                    // If the Tawk chat widget is not yet loaded, reload the Tawk script
+                    var s1 = document.createElement("script");
+                    var s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/648c8c8ecc26a871b022fe6f/1h32ga41a';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s0.parentNode.insertBefore(s1, s0);
+    
+                    // Add an event listener to show the chat widget after the script is loaded
+                    s1.addEventListener('load', function () {
+
+                        // Maximize the chat widget
+                        // Tawk_API.maximize();
+                        // Show the chat widget
+                        // Tawk_API.toggle();
+
+                        // Set waktu obrolan selesai jika user tidak membalas chat admin dalam 10 minutes (600,000 milliseconds)
+                        setTimeout(function () {
+                        endTawkChatIfNoReply();
+                        }, 600000);
+                    });
+                        
+
+                    }
+                }
+
+
+                // Mengecek admin sedang online atau offline
+                function checkTawkStatus() {
+                // Check if the Tawk chat widget has already been loaded
+                if (typeof Tawk_API.getStatus !== "undefined") {
+                    var pageStatus = Tawk_API.getStatus();
+
+                    if (pageStatus === 'online') {
+                        // Do something for online status
+                        console.log('Tawk is online.');
+                    } else if (pageStatus === 'away') {
+                        // Do something for away status
+                        console.log('Tawk is away.');
+                    } else {
+                        // Do something for offline status
+                        console.log('Tawk is offline.');
+                    }
+                } else {
+                    // If the Tawk chat widget is not yet loaded, wait and check again
+                    setTimeout(checkTawkStatus, 100);
+                }
+            }
+
+            // Call the function to check Tawk status when the widget is loaded
+            window.Tawk_API.onLoad = function () {
+                checkTawkStatus();
+            };
+
+
+
+            // Function to end the chat if there is no reply from admin
+            function endTawkChatIfNoReply() {
+                if (typeof Tawk_API.onChatMaximized !== "undefined" && typeof Tawk_API.endChat !== "undefined") {
+                    var chatMaximized = Tawk_API.onChatMaximized();
+                    if (chatMaximized) {
+                        Tawk_API.endChat();
+                        console.log('Chat has been ended due to no reply from admin.');
+                    }
+                }
+            }
+
+            // Call the function to check Tawk status when the widget is loaded
+            window.Tawk_API.onLoad = function () {
+                checkTawkStatus();
+            };
+
+
+
+
+        </script>
 
 
 @endsection

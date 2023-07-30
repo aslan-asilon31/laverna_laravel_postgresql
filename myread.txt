@@ -1,3 +1,8 @@
+===== when cannot push to github 
+after generate new token
+git remote set-url origin https://<token>@github.com/<username>/<repo>
+
+
 features for users :
 
 

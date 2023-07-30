@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\SocialiteController;
+use App\Http\Controllers\Room\RoomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +23,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/**
+ * socialite auth
+ */
+Route::get('/auth/{provider}', [SocialiteController::class, 'redirectToProvider']);
+Route::get('/auth/{provider}/callback', [SocialiteController::class, 'handleProvideCallback']);
+
+
+Route::post('/search-rooms', [RoomController::class, 'search'])->name('searchRooms');
+Route::post('/filter-room-prices', [RoomController::class, 'filter_price'])->name('filterRoomPrices');

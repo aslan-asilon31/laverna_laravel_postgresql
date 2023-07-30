@@ -13,11 +13,20 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
-            $table->string('room_category_id');
-            $table->string('amenity_id');
-            $table->string('bed_type_id');
-            $table->string('name');
-            $table->string('type');
+            $table->integer('room_category_id')->nullable();
+            $table->integer('amenity_id')->nullable();
+            $table->integer('bed_type_id')->nullable();
+            $table->integer('cancellation_id')->nullable();
+            $table->string('name')->nullable();
+            $table->string('image')->nullable();
+            $table->date('room_availability')->nullable();
+            $table->integer('children_amount')->nullable();
+            $table->integer('adult_amount')->nullable();
+            $table->integer('price_base')->nullable();
+            $table->integer('discount')->nullable();
+            $table->integer('price_after')->nullable();
+            $table->boolean('is_cancel')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
